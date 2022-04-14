@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatVC" customModule="DrNee" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="YOZ-6D-qmP" id="AQv-FN-fsG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Hz-Vb-gT6" customClass="ContainerBoundTop" customModule="DrNee" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YOZ-6D-qmP">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" name="blue_color"/>
+                    <constraints>
+                        <constraint firstItem="YOZ-6D-qmP" firstAttribute="leading" secondItem="4Hz-Vb-gT6" secondAttribute="leading" id="8Lw-pY-4RV"/>
+                        <constraint firstItem="YOZ-6D-qmP" firstAttribute="top" secondItem="4Hz-Vb-gT6" secondAttribute="top" id="J0J-e7-Zwy"/>
+                        <constraint firstAttribute="bottom" secondItem="YOZ-6D-qmP" secondAttribute="bottom" id="VAO-ic-7hz"/>
+                        <constraint firstAttribute="trailing" secondItem="YOZ-6D-qmP" secondAttribute="trailing" id="fG1-PC-KTI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="4Hz-Vb-gT6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="946-wq-IMj"/>
+                <constraint firstItem="4Hz-Vb-gT6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EX7-3j-tKo"/>
+                <constraint firstItem="4Hz-Vb-gT6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LFe-fR-oVJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4Hz-Vb-gT6" secondAttribute="bottom" id="RZJ-qE-Dhs"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="blue_color">
+            <color red="0.093999996781349182" green="0.46700000762939453" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Resend OTP affter %d senconds</key>
+	<string>Gửi lại mã OTP sau %d giây</string>
+	<key>Next</key>
+	<string>Tiếp theo</string>
+	<key>Reset Password</key>
+	<string>Đặt lại mật khẩu</string>
+	<key>Confirm Password</key>
+	<string>Xác nhận mật khẩu</string>
+	<key>OTP code invalid</key>
+	<string>Mã OTP không đúng</string>
+	<key>Wrong username or email</key>
+	<string>Tên đăng nhập hoặc email không đúng</string>
+	<key>Password not match</key>
+	<string>Mật khẩu không khớp</string>
+</dict>
+</plist>

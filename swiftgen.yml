@@ -1,0 +1,12 @@
+
+strings:
+  inputs: VSA/Base.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: VSA/SwiftGen/Strings.swift
+xcassets:
+  inputs:
+    - VSA/Resources/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: VSA/SwiftGen/Assets.swift

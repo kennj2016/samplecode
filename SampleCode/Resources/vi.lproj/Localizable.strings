@@ -1,0 +1,11 @@
+/*
+  Localizable.strings
+  VSA
+
+  Created by KenNguyen 07/06/2021.
+
+*/
+
+"signIn.title" = "Đăng Nhập";
+"signIn.phoneInputPlaceholder" = "Số điện thoại đã đăng ký";
+"signIn.passwordInputPlaceholder" = "Mật khẩu";

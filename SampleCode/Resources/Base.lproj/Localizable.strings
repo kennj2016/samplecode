@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  VSA
+
+  Created by KenNguyen 07/06/2021.
+  
+*/
+
+"signIn.title" = "Sign In";
+"signIn.phoneInputPlaceholder" = "Registered phone number";
+"signIn.passwordInputPlaceholder" = "Password";

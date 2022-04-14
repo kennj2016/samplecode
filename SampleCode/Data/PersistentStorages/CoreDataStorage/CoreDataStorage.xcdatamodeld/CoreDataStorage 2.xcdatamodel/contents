@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="UserListResponseEntity" representedClassName="UserListResponseEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="page" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalPages" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="request" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="UserRequestEntity" inverseName="response" inverseEntity="UserRequestEntity"/>
+        <relationship name="users" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="UserResponseEntity" inverseName="userResponse" inverseEntity="UserResponseEntity"/>
+    </entity>
+    <entity name="UserQueryEntity" representedClassName="UserQueryEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="query" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="UserRequestEntity" representedClassName="UserRequestEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="page" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="query" optional="YES" attributeType="String"/>
+        <relationship name="response" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="UserListResponseEntity" inverseName="request" inverseEntity="UserListResponseEntity"/>
+    </entity>
+    <entity name="UserResponseEntity" representedClassName="UserResponseEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="avatar" optional="YES" attributeType="String"/>
+        <attribute name="displayName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="nickName" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <relationship name="userResponse" maxCount="1" deletionRule="Nullify" destinationEntity="UserListResponseEntity" inverseName="users" inverseEntity="UserListResponseEntity"/>
+    </entity>
+    <elements>
+        <element name="UserQueryEntity" positionX="6913.73828125" positionY="-748.890625" width="128" height="59"/>
+        <element name="UserResponseEntity" positionX="7183.984375" positionY="-567.76171875" width="128" height="119"/>
+        <element name="UserRequestEntity" positionX="6822.30859375" positionY="-559.6484375" width="128" height="74"/>
+        <element name="UserListResponseEntity" positionX="6993.70703125" positionY="-578.1640625" width="128" height="89"/>
+    </elements>
+</model>
